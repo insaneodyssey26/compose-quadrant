@@ -53,5 +53,14 @@ fun QuadrantScreen() {
                 backgroundColor = Color(0xFFFFD180)
             )
         }
+        Row(Modifier.weight(1f)) {
+            Cards(
+                title = "Row composable",
+                description = "A layout composable that places its children in a horizontal sequence.",
+                Modifier.weight(1f),
+                backgroundColor = Color(0xFFB9FBC0)
+            )
+        }
+        }
     }
 }
