@@ -67,8 +67,5 @@ fun QuadrantScreen() {
                 backgroundColor = Color(0xFFCFD8DC)
             )
         }
-            )
-        }
-        }
     }
 }
