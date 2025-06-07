@@ -21,6 +21,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.masum.composequadrant.ui.theme.ComposeQuadrantTheme
@@ -34,7 +35,7 @@ class MainActivity : ComponentActivity() {
                 Surface(modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-
+                    QuadrantScreen()
                 }
             }
         }
@@ -48,28 +49,28 @@ fun QuadrantScreen() {
             Cards(
                 title = "Text composable",
                 description = "Displays text and follows Material Design guidelines.",
-                Modifier.weight(1f),
-                backgroundColor = Color(0xFFEADDFF)
+                backgroundColor = Color(0xFFEADDFF),
+                Modifier.weight(1f)
             )
             Cards(
                 title = "Image composable",
                 description = "Creates a composable that lays out and draws a given painter class.",
+                backgroundColor = Color(0xFFFFD180),
                 Modifier.weight(1f),
-                backgroundColor = Color(0xFFFFD180)
             )
         }
         Row(Modifier.weight(1f)) {
             Cards(
                 title = "Row composable",
                 description = "A layout composable that places its children in a horizontal sequence.",
+                backgroundColor = Color(0xFFB9FBC0),
                 Modifier.weight(1f),
-                backgroundColor = Color(0xFFB9FBC0)
             )
             Cards(
                 title = "Column composable",
                 description = "A layout composable that places its children in a vertical sequence.",
+                backgroundColor = Color(0xFFCFD8DC),
                 Modifier.weight(1f),
-                backgroundColor = Color(0xFFCFD8DC)
             )
         }
     }
@@ -79,7 +80,8 @@ fun QuadrantScreen() {
 fun Cards(
     title: String,
     description: String,
-    backgroundColor: Color
+    backgroundColor: Color,
+    modifier: Modifier = Modifier
 ) {
     Column(
         modifier = Modifier
@@ -93,6 +95,10 @@ fun Cards(
             text = title,
             modifier = Modifier.padding(bottom = 16.dp),
             fontWeight = FontWeight.Bold
+        )
+        Text(
+            text = description,
+            textAlign = TextAlign.Justify
         )
     }
 }
