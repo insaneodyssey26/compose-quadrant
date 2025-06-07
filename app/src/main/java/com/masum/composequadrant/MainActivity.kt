@@ -46,6 +46,12 @@ fun QuadrantScreen() {
                 Modifier.weight(1f),
                 backgroundColor = Color(0xFFEADDFF)
             )
+            Cards(
+                title = "Image composable",
+                description = "Creates a composable that lays out and draws a given painter class.",
+                Modifier.weight(1f),
+                backgroundColor = Color(0xFFFFD180)
+            )
         }
     }
 }
