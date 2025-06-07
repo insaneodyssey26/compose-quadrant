@@ -50,13 +50,13 @@ fun QuadrantScreen() {
                 title = "Text composable",
                 description = "Displays text and follows Material Design guidelines.",
                 backgroundColor = Color(0xFFEADDFF),
-                Modifier.weight(1f)
+                modifier = Modifier.weight(1f)
             )
             Cards(
                 title = "Image composable",
                 description = "Creates a composable that lays out and draws a given painter class.",
                 backgroundColor = Color(0xFFFFD180),
-                Modifier.weight(1f),
+                modifier = Modifier.weight(1f),
             )
         }
         Row(Modifier.weight(1f)) {
@@ -64,13 +64,13 @@ fun QuadrantScreen() {
                 title = "Row composable",
                 description = "A layout composable that places its children in a horizontal sequence.",
                 backgroundColor = Color(0xFFB9FBC0),
-                Modifier.weight(1f),
+                modifier = Modifier.weight(1f),
             )
             Cards(
                 title = "Column composable",
                 description = "A layout composable that places its children in a vertical sequence.",
                 backgroundColor = Color(0xFFCFD8DC),
-                Modifier.weight(1f),
+                modifier = Modifier.weight(1f),
             )
         }
     }
@@ -84,7 +84,7 @@ fun Cards(
     modifier: Modifier = Modifier
 ) {
     Column(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxSize()
             .background(backgroundColor)
             .padding(16.dp),
