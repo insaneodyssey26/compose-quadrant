@@ -60,6 +60,14 @@ fun QuadrantScreen() {
                 Modifier.weight(1f),
                 backgroundColor = Color(0xFFB9FBC0)
             )
+            Cards(
+                title = "Column composable",
+                description = "A layout composable that places its children in a vertical sequence.",
+                Modifier.weight(1f),
+                backgroundColor = Color(0xFFCFD8DC)
+            )
+        }
+            )
         }
         }
     }
