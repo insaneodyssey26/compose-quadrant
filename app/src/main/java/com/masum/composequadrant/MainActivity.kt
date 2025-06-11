@@ -59,8 +59,8 @@ fun QuadrantScreen() {
         }
         Row(Modifier.weight(1f)) {
             Cards(
-                title = "Row composable",
-                description = "A layout composable that places its children in a horizontal sequence.",
+                title = stringResource(R.string.row_composable_title),
+                description = stringResource(R.string.row_composable_description),
                 backgroundColor = Color(0xFFB9FBC0),
                 modifier = Modifier.weight(1f),
             )

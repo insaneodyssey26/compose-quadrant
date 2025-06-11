@@ -2,4 +2,6 @@
     <string name="app_name">Compose Quadrant</string>
     <string name="text_composable_title">Text composable</string>
     <string name="text_composable_description">Displays text and follows Material Design guidelines.</string>
+    <string name="row_composable_title">Row composable</string>
+    <string name="row_composable_description">A layout composable that places its children in a horizontal sequence.</string>
 </resources>
