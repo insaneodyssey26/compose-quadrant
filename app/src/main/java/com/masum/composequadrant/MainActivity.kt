@@ -18,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -44,8 +45,8 @@ fun QuadrantScreen() {
     Column(Modifier.fillMaxWidth()) {
         Row(Modifier.weight(1f)) {
             Cards(
-                title = "Text composable",
-                description = "Displays text and follows Material Design guidelines.",
+                title = stringResource(R.string.text_composable_title),
+                description = stringResource(R.string.text_composable_description),
                 backgroundColor = Color(0xFFEADDFF),
                 modifier = Modifier.weight(1f)
             )
