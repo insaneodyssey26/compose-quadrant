@@ -65,8 +65,8 @@ fun QuadrantScreen() {
                 modifier = Modifier.weight(1f),
             )
             Cards(
-                title = "Column composable",
-                description = "A layout composable that places its children in a vertical sequence.",
+                title = stringResource(R.string.column_composable_title),
+                description = stringResource(R.string.column_composable_description),
                 backgroundColor = Color(0xFFCFD8DC),
                 modifier = Modifier.weight(1f),
             )

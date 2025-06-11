@@ -6,4 +6,6 @@
     <string name="row_composable_description">A layout composable that places its children in a horizontal sequence.</string>
     <string name="image_composable_title">Image composable</string>
     <string name="image_composable_description">Creates a composable that lays out and draws a given painter class.</string>
+    <string name="column_composable_title">Column composable</string>
+    <string name="column_composable_description">A layout composable that places its children in a vertical sequence.</string>
 </resources>
