@@ -51,8 +51,8 @@ fun QuadrantScreen() {
                 modifier = Modifier.weight(1f)
             )
             Cards(
-                title = "Image composable",
-                description = "Creates a composable that lays out and draws a given painter class.",
+                title = stringResource(R.string.image_composable_title),
+                description = stringResource(R.string.image_composable_description),
                 backgroundColor = Color(0xFFFFD180),
                 modifier = Modifier.weight(1f),
             )
